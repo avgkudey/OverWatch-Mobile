@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="avg.com.overwatch.carlayout1">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/custom_theme_color" />
+
+    <Button
+        android:id="@+id/btnJyS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/r7"
+        android:rotation="90"
+        android:text="S " />
+
+    <Button
+        android:id="@+id/btnJyA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/btnJyD"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/btnJyW"
+        android:background="@drawable/r7"
+        android:rotation="180"
+        android:text="A " />
+
+    <Button
+        android:id="@+id/btnJyW"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/btnJyS"
+        android:background="@drawable/r7"
+        android:rotation="270"
+        android:text="W" />
+
+    <Button
+        android:id="@+id/btnJyD"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_toStartOf="@+id/btnJyW"
+        android:background="@drawable/r7"
+        android:rotation="0"
+        android:text="D " />
+
+    <ToggleButton
+        android:id="@+id/autoAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnJyW"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:rotation="90"
+        android:text="Auto Accelerate" />
+
+    <ToggleButton
+        android:id="@+id/autoTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/autoAcc"
+        android:layout_alignTop="@+id/btnJyA"
+        android:layout_marginTop="77dp"
+        android:rotation="90"
+        android:text="Auto Turn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnJyD"
+        android:layout_alignEnd="@+id/textView5"
+        android:rotation="90"
+        android:text="Auto Turn" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autoAcc"
+        android:layout_alignBottom="@+id/autoAcc"
+        android:layout_alignParentEnd="true"
+        android:rotation="90"
+        android:text="Auto Acc " />
+
+</RelativeLayout>

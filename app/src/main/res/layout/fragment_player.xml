@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="avg.com.overwatch.Player">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnPlayerPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Play/Pause" />
+
+        <Button
+            android:id="@+id/btnPlayerSkNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnPlayerPlay"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/btnPlayerPlay"
+            android:text="seekF" />
+
+        <Button
+            android:id="@+id/btnPlayerSkBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnPlayerPlay"
+            android:layout_alignBottom="@+id/btnPlayerPlay"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/btnPlayerPlay"
+            android:text="SeekB" />
+
+        <Button
+            android:id="@+id/btnPlayerNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnPlayerSkNext"
+            android:layout_below="@+id/btnPlayerSkNext"
+            android:layout_marginTop="19dp"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/btnPlayerBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnPlayerSkBack"
+            android:layout_alignTop="@+id/btnPlayerNext"
+            android:text="Back " />
+
+        <Button
+            android:id="@+id/btnPlayerVlUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnPlayerSkNext"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="84dp"
+            android:text="VolumeUp" />
+
+        <Button
+            android:id="@+id/btnPlayerVlDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnPlayerVlUp"
+            android:layout_below="@+id/btnPlayerVlUp"
+            android:layout_marginTop="25dp"
+            android:text="VolumeDown" />
+    </RelativeLayout>
+</FrameLayout>

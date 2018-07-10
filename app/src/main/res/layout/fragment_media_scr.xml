@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="avg.com.overwatch.MediaScr">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnplaymedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Play/Pause" />
+
+        <Button
+            android:id="@+id/btnMute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnplaymedia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Mute" />
+
+        <Button
+            android:id="@+id/btnbackmedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnplaymedia"
+            android:layout_alignBottom="@+id/btnplaymedia"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/btnplaymedia"
+            android:text="back" />
+
+        <Button
+            android:id="@+id/btnnextmedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnplaymedia"
+            android:layout_alignBottom="@+id/btnplaymedia"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/btnplaymedia"
+            android:text="next" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btnplaymedia"
+            android:layout_alignStart="@+id/btnbackmedia"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="15dp" />
+    </RelativeLayout>
+</FrameLayout>

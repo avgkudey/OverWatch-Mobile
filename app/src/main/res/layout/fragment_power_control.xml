@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="avg.com.overwatch.PowerControl">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/btnrestart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnsignout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="28dp"
+            android:text="Signout" />
+
+        <Button
+            android:id="@+id/btnshd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnsignout"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/btnsignout"
+            android:text="Shutdown" />
+
+        <Button
+            android:id="@+id/btnsleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnsignout"
+            android:layout_below="@+id/btnsignout"
+            android:layout_marginTop="19dp"
+            android:text="Sleep/Hibernate" />
+
+        <Button
+            android:id="@+id/btnrst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnshd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="29dp"
+            android:text="Restart" />
+
+        <Button
+            android:id="@+id/btnLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnsleep"
+            android:layout_alignBottom="@+id/btnsleep"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/btnsleep"
+            android:text="LOCK" />
+
+    </RelativeLayout>
+</FrameLayout>
